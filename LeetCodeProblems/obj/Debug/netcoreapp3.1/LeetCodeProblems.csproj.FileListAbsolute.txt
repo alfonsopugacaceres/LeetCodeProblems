@@ -10,3 +10,4 @@ C:\Users\alfonsopuga\source\repos\LeetCodeProblems\LeetCodeProblems\obj\Debug\ne
 C:\Users\alfonsopuga\source\repos\LeetCodeProblems\LeetCodeProblems\obj\Debug\netcoreapp3.1\LeetCodeProblems.dll
 C:\Users\alfonsopuga\source\repos\LeetCodeProblems\LeetCodeProblems\obj\Debug\netcoreapp3.1\LeetCodeProblems.pdb
 C:\Users\alfonsopuga\source\repos\LeetCodeProblems\LeetCodeProblems\obj\Debug\netcoreapp3.1\LeetCodeProblems.genruntimeconfig.cache
+C:\Users\alfonsopuga\source\repos\LeetCodeProblems\LeetCodeProblems\obj\Debug\netcoreapp3.1\LeetCodeProblems.csprojAssemblyReference.cache
