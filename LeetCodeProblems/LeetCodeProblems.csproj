@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Problems\AmazonQuestions\**" />
+    <EmbeddedResource Remove="Problems\AmazonQuestions\**" />
+    <None Remove="Problems\AmazonQuestions\**" />
+  </ItemGroup>
+
 </Project>

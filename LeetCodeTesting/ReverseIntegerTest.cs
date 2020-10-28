@@ -3,7 +3,7 @@ using LeetCodeProblems.Problems.ReverseInteger;
 
 namespace LeetCodeTesting
 {
-    public partial class ReverseIntegerTest
+    public class ReverseIntegerTest
     {
 
         [Test]
