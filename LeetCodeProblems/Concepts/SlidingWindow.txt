@@ -1,0 +1,43 @@
+﻿Sliding Window
+
+
+The sliding window technique attempts to simplify a souble loop by using pointers to track progress in a single loop.
+
+Example:
+
+Find the maximum sum of K consecutive elements in an array
+
+function FindMaximumConsecutiveSum
+input: [400, 200, 45, 98, 100, 500]
+K = 4
+
+for(int i = 0; i < array.Length - K; i++){
+    int sum = 0;
+	for(int j = i; J < K; j++){
+		sum += array[j]
+	}
+	maxsum = (maxsum < sum) ? sum : maxsum;
+}
+
+answer is maxsum
+
+
+
+Sliding window technique:
+
+int windowslot = 0;
+int currentSum = 0;
+int maxsum = 0;
+for(int i = 0; i < array.Length - K; i++){
+
+	currentSum = currentSum + array[i];
+	if(i + 1 - windowSlot == K){
+	
+		if(maxsum < currentSum){
+			maxsum = currentsum;
+		}
+		currentsum -= array[windowslot];
+		windowslot++;
+
+	}
+}
