@@ -1,0 +1,1 @@
+﻿Write an algorithm to calculat the Nth fibonacci number
