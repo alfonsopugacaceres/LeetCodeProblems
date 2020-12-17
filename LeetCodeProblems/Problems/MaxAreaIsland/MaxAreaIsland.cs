@@ -8,7 +8,6 @@ namespace LeetCodeProblems.Problems.MaxAreaIsland
     {
         public int MaxAreaOfIsland(int[][] grid)
         {
-            int maxIsland = int.MinValue;
             int ret = int.MinValue;
 
 

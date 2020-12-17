@@ -19,24 +19,32 @@ namespace LeetCodeProblems.Problems
             else if (target < -1000000000 || target > 1000000000)
                 return null;
 
-
-            int[] result = new int[2];
-            result[0] = 0;
-            result[1] = 0;
-            for (int i = 0; i < nums.Length; i++)
+            else
             {
-                if (nums[i] < -1000000000 || nums[i] > 1000000000)
-                    return null;
-                for (int j = i + 1; j < nums.Length; j++)
+                //create a dictionary to store the numbers
+                IDictionary<int, int> dict = new Dictionary<int, int>();
+                //initiate a loop
+                for (int i = 0; i < nums.Length; i++)
                 {
-                    if (nums[i] + nums[j] == target)
+                    //create a complement using the target and the current number
+                    int complement = target - nums[i];
+
+                    //check the dictionary to detrmine if there is a complement 
+                    if (dict.ContainsKey(complement))
                     {
-                        result[0] = i;
-                        result[1] = j;
+                        //if we find a complement we return the index of the complement and the current iteration
+                        return new int[] { dict[complement], i };
+                    }
+                    else
+                    {
+                        //otherwise add the current value to the dictionary and its index
+                        dict.Add(nums[i], i);
                     }
                 }
+                return null;
+
             }
-            return result;
+            
         }
 
     }
