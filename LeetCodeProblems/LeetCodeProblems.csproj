@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Searches\" />
     <Folder Include="ToSumPartTwo\" />
-    <Folder Include="SortingAlgorithms\" />
   </ItemGroup>
 
 </Project>

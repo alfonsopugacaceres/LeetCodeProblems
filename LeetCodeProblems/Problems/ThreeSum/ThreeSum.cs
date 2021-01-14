@@ -6,7 +6,7 @@ namespace LeetCodeProblems.Problems.ThreeSum
 {
     public class ThreeSum
     {
-        public IList<IList<int>> ThreeSum(int[] nums)
+        public IList<IList<int>> ThreeSu(int[] nums)
         {
             Array.Sort(nums);
             IList<IList<int>> res = new List<IList<int>>();
