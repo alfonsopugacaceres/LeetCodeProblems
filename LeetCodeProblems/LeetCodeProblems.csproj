@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Searches\" />
     <Folder Include="ToSumPartTwo\" />
   </ItemGroup>
 
