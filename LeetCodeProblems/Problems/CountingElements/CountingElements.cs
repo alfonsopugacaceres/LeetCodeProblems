@@ -6,6 +6,7 @@ namespace LeetCodeProblems.Problems.CountingElements
 {
     public class CountingElements
     {
+        //1426. Counting Elements
         public int CountElements(int[] arr)
         {
             IDictionary<int, int> dict = new Dictionary<int, int>();

@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Problems\FirstMissingPositive\FirstMissingPositive.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ToSumPartTwo\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Problems\FirstMissingPositive\FirstMissingPositive.cs" />
   </ItemGroup>
 
 </Project>
