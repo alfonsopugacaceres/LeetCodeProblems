@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Problems\NewFolder2\" />
     <Folder Include="ToSumPartTwo\" />
   </ItemGroup>
 
