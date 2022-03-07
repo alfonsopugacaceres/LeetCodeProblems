@@ -1,0 +1,17 @@
+﻿Alfonso Puga's Master Sheet of Problems and Techniques
+
+
+Palindrome Problems:
+
+	-A Palindrome is a word that when reversed gived the same word
+
+	Example: racecar
+
+	-A key component of these problems revolves around finding eitherunique or max length palindromes
+	-For a palindrome to keep being a palindrome we have to add the same letter to both ends of the word. 
+
+	Example: dracecard, udracecardu
+
+
+Binary Search Trees
+	
