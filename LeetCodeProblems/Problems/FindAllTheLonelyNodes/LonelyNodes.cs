@@ -47,5 +47,34 @@ namespace LeetCodeProblems.Problems.FindAllTheLonelyNodes
                                                       //we need to make sure we do not miss any nodes
             }
         }
+
+        public IList<int> GetLonelyNodes1(TreeNode root)
+        {
+            IList<int> lonelyNodes = new List<int>();
+            Helper(root, lonelyNodes);
+            return lonelyNodes;
+
+        }
+
+        public void Helper(TreeNode root, IList<int> res)
+        {
+            if (root == null)
+                return;
+            if (root.left == null && root.right != null)
+            {
+                res.Add(root.right.val);
+                Helper(root.right, res);
+            }
+            else if (root.right == null && root.left != null)
+            {
+                res.Add(root.left.val);
+                Helper(root.left, res);
+            }
+            else
+            {
+                Helper(root.right, res);
+                Helper(root.left, res);
+            }
+        }
     }
 }

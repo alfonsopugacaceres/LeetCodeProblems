@@ -33,5 +33,18 @@ namespace LeetCodeProblems.Problems.RangeSumBST
 
             return sum;//return the sum
         }
+
+        public int RangeSumBST2(TreeNode root, int low, int high)
+        {
+            if (root == null)
+                return 0;
+            if (root.val < low)
+                return RangeSumBST2(root.right, low, high);
+            if (root.val > high)
+                return RangeSumBST2(root.left, low, high);
+            if (root.val >= low && root.val <= high)
+                return root.val + RangeSumBST2(root.left, low, high) + RangeSumBST2(root.right, low, high);
+            return 0;
+        }
     }
 }

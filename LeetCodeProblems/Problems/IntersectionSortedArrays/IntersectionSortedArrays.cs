@@ -6,68 +6,31 @@ namespace LeetCodeProblems.Problems.IntersectionSortedArrays
 {
     public class IntersectionSortedArrays
     {
-        public IList<int> ArraysIntersection(int[] arr1, int[] arr2, int[] arr3)
+        public int[] Intersection(int[] nums1, int[] nums2)
         {
-            IList<int> ls = new List<int>();
-            IDictionary<int, int> incident = new Dictionary<int, int>();
-
-            int i = 0;
-            int j = 0;
-            int k = 0;
-
-            while(i < arr1.Length && j < arr2.Length && k < arr3.Length)
+            HashSet<int> set1 = new HashSet<int>();
+            HashSet<int> set2 = new HashSet<int>();
+            for (int i = 0; i < nums1.Length; i++)
             {
-                if(i < arr1.Length)
-                {
-                    if (incident.ContainsKey(arr1[i]))
-                    {
-                        incident[arr1[i]] += 1;
-                        if(incident[arr1[i]] == 3)
-                        {
-                            ls.Add(arr1[i]);
-                        }
-                    }
-                    else
-                    {
-                        incident[arr1[i]] = 1;
-                    }
-                }
-                if (j < arr2.Length)
-                {
-                    if (incident.ContainsKey(arr2[j]))
-                    {
-                        incident[arr2[j]] += 1;
-                        if (incident[arr2[j]] == 3)
-                        {
-                            ls.Add(arr2[j]);
-                        }
-                    }
-                    else
-                    {
-                        incident[arr2[j]] = 1;
-                    }
-                }
-                if (k < arr3.Length)
-                {
-                    if (incident.ContainsKey(arr3[i]))
-                    {
-                        incident[arr3[k]] += 1;
-                        if (incident[arr3[k]] == 3)
-                        {
-                            ls.Add(arr3[k]);
-                        }
-                    }
-                    else
-                    {
-                        incident[arr3[k]] = 1;
-                    }
-                }
-                i++;
-                j++;
-                k++;
+                if (!set1.Contains(nums1[i]))
+                    set1.Add(nums1[i]);
+            }
+            for (int i = 0; i < nums2.Length; i++)
+            {
+                if (!set2.Contains(nums2[i]))
+                    set2.Add(nums2[i]);
             }
 
-            return ls;
+            List<int> ret = new List<int>();
+
+            foreach (int x in set1)
+            {
+                if (set2.Contains(x))
+                    ret.Add(x);
+            }
+
+            return ret.ToArray();
         }
+
     }
 }
