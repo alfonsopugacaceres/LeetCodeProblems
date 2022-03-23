@@ -9,6 +9,12 @@ namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.MaximumSubArray
         //53. Maximum Subarray
         //Given an integer array nums, find the contiguous subarray(containing at least one number) which has the largest sum and return its sum.
         //A subarray is a contiguous part of an array.
+
+        /// <summary>
+        /// Kadane's Algorithm
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int MaxSubArray1(int[] nums)
         {
             int max = nums[0];//initialize the max to the first number

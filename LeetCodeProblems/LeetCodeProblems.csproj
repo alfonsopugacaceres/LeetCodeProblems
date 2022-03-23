@@ -10,8 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="LeetCodePatterns\DynamicProgrammingFibonacci\FibonacciPattern\" />
-    <Folder Include="LeetCodePatterns\DynamicProgrammingTabulation\" />
     <Folder Include="Problems\NewFolder1\" />
     <Folder Include="Problems\IntersectionOfTwoArrays\" />
     <Folder Include="Problems\CanSum\" />
