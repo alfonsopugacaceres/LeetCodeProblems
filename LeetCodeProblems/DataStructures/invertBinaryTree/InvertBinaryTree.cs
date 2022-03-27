@@ -22,13 +22,12 @@ namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.invertBinaryTree
         {
             if (root == null)
                 return null;
-            else
-            {
-                TreeNode left = InvertTree(root.left);
-                TreeNode right = InvertTree(root.right);
-                root.right = left;
-                root.left = right;
-                return root;
-            }
+
+            TreeNode Left = InvertTree(root.left);
+            TreeNode Right = InvertTree(root.right);
+            root.left = Right;
+            root.right = Left;
+            return root;
         }
+    }
 }

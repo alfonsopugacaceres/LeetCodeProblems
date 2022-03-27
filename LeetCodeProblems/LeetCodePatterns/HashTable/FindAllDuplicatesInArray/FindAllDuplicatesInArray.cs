@@ -32,29 +32,7 @@ namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.FindAllDuplicatesInA
             return ret;
         }
 
-        /// <summary>
-        /// https://www.youtube.com/watch?v=aMsSF1Il3IY
-        /// </summary>
-        /// <param name="nums"></param>
-        /// <returns></returns>
-        public IList<int> FindDuplicatesSmallSpace(int[] nums)
-        {
-            IList<int> ret = new List<int>();
 
-
-            for (int i = 0; i < nums.Length; i++)
-            {
-                int currentIndex = Math.Abs(nums[i]) - 1;
-
-                if (nums[currentIndex] < 0)
-                    ret.Add(Math.Abs(currentIndex + 1));
-                else
-                    nums[currentIndex] *= -1;
-            }
-
-            return ret;
-
-        }
 
 
     }

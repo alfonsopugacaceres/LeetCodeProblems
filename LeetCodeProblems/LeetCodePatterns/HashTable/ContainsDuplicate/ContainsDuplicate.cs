@@ -8,6 +8,7 @@ namespace LeetCodeProblems.LeetCodePatterns.HashTable.ContainsDuplicate
     {
         //TAGS Google Amazon Microsoft
         //217 Contains Duplicate
+
         //Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
         /// <summary>
         /// Use a hashset to solve this problem. 
