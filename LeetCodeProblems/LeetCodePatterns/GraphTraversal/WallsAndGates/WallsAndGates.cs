@@ -16,7 +16,7 @@ namespace LeetCodeProblems.LeetCodePatterns.GraphTraversal.WallsAndGates
         public void WallsAndGates1(int[][] rooms)
         {
 
-            Queue<(int, int, int)> queue = new Queue<(int, int, int)>();
+            Queue<(int, int, int)> queue = new Queue<(int, int, int)>();//this is the queue 
             HashSet<(int, int)> set = new HashSet<(int, int)>();
             for (int i = 0; i < rooms.Length; i++)
             {
