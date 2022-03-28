@@ -23,7 +23,6 @@ namespace LeetCodeProblems.LeetCodePatterns.Trie.SearchSuggestionsSystem
         /// </summary>
         public class TrieNode
         {
-
             public TrieNode[] FollowUps { get; set; }//These are the follow ups to your current trie, a collection
                                                      //of all the 26 letters of the alphabet
             public bool IsWord { get; set; }//this flag lets us know if the collection of letters up to now 
