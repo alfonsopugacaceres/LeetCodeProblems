@@ -7,23 +7,23 @@ namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.Permutations2
 {
     class Permutations2
     {
-        public IList<IList<int>> PermuteUnique(int[] nums)
-        {
+        //public IList<IList<int>> PermuteUnique(int[] nums)
+        //{
 
-            IDictionary<int, int> memo = new Dictionary<int, int>();
-            for(int i = 0; i < nums.Length; i++)
-            {
-                if (!memo.ContainsKey(nums[i]))
-                    memo.Add(nums[i], 1);
-                else
-                    memo[nums[i]]++;
-            }
+        //    IDictionary<int, int> memo = new Dictionary<int, int>();
+        //    for(int i = 0; i < nums.Length; i++)
+        //    {
+        //        if (!memo.ContainsKey(nums[i]))
+        //            memo.Add(nums[i], 1);
+        //        else
+        //            memo[nums[i]]++;
+        //    }
 
-            IList<IList<int>> res = new List<IList<int>>();
+        //    IList<IList<int>> res = new List<IList<int>>();
 
 
 
-        }
+        //}
 
         public void DFSHelper(IDictionary<int, int> memo, List<int> permutation, IList<IList<int>> res, int length)
         {

@@ -35,10 +35,7 @@ namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.RemoveNthNodeFromend
                 pointer2.next = pointer2.next.next;
                 return dummyHead.next;
             }
-            public ListNode RemoveNthFromEnd2(ListNode head, int n)
-            {
-
-            }
+         
         }
     }
 }

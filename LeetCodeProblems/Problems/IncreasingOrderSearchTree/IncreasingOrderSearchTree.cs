@@ -18,9 +18,5 @@ namespace LeetCodeProblems.Problems.IncreasingOrderSearchTree
                 this.right = right;
             }
         }
-        public TreeNode IncreasingBST(TreeNode root)
-        {
-
-        }
     }
 }

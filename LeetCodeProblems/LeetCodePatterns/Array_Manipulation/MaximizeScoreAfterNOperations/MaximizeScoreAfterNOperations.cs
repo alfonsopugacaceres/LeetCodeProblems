@@ -16,10 +16,5 @@ namespace LeetCodeProblems.LeetCodePatterns.Array_Manipulation.MaximizeScoreAfte
         //Remove x and y from nums.
         //Return the maximum score you can receive after performing n operations.
         //The function gcd(x, y) is the greatest common divisor of x and y.
-
-        public int MaxScore(int[] nums)
-        {
-
-        }
     }
 }
