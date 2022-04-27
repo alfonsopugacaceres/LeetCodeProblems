@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCodeProblems.Problems.PeakIndexMountainArray
+namespace LeetCodeProblems.LeetCodePatterns.Array_Manipulation.PeakIndexMountainArray
 {
     public class PeakIndexMountainArray
     {

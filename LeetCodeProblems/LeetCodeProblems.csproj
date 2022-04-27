@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <Folder Include="LeetCodePatterns\BinaryTree\NewFolder\" />
+    <Folder Include="LeetCodePatterns\NewFolder\" />
     <Folder Include="Problems\NewFolder1\" />
     <Folder Include="Problems\IntersectionOfTwoArrays\" />
     <Folder Include="Problems\CanSum\" />

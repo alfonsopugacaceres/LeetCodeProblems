@@ -40,5 +40,17 @@ namespace LeetCodeProblems.LeetCodePatterns.BinaryTree.MaximumDepthBTree
 
             return max;
         }
+
+        public int MaxDepth1(TreeNode root)
+        {
+            return Helper(0, root);
+        }
+
+        public int Helper(int num, TreeNode root)
+        {
+            if (root == null)
+                return num;
+            return Math.Max(Helper(num + 1, root.right), Helper(num + 1, root.left));
+        }
     }
 }
