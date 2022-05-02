@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCodeProblems.Problems.ValidAnagram
+namespace LeetCodeProblems.LeetCodePatterns.StringManipulation.ValidAnagram
 {
     public class ValidAnagram
     {

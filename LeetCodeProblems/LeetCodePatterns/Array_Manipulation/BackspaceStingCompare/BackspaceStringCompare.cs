@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCodeProblems.GoogleRecommended.GooglePatterns.BackspaceStingCompare
+namespace LeetCodeProblems.LeetCodePatterns.Array_Manipulation.BackspaceStingCompare
 {
     public class BackspaceStringCompare
     {

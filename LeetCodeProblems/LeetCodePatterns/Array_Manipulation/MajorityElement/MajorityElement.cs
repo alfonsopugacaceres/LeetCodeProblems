@@ -39,5 +39,31 @@ namespace LeetCodeProblems.LeetCodePatterns.Array_Manipulation.MajorityElement
 
             return maxNum;//return the max
         }
+
+        public int MajorityElement2(int[] nums)
+        {
+            Dictionary<int, int> memo = new Dictionary<int, int>();
+            int max = int.MinValue;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (memo.ContainsKey(nums[i]))
+                    memo[nums[i]]++;
+                else
+                    memo.Add(nums[i], 1);
+            }
+
+            int res = 0;
+            foreach (KeyValuePair<int, int> pair in memo)
+            {
+                if (max < pair.Value)
+                {
+                    max = pair.Value;
+                    res = pair.Key;
+                }
+            }
+
+            return res;
+        }
     }
 }

@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.XPath;
 
-namespace LeetCodeProblems.Problems.AmazonProblems
+namespace LeetCodeProblems.LeetCodePatterns.Array_Manipulation.AmazonProblems
 {
     public class ArrayRankTransformProblem
     {
         //1331. Rank Transform of an Array
+
+//        Given an array of integers arr, replace each element with its rank.
+
+//The rank represents how large the element is. The rank has the following rules:
+
+//Rank is an integer starting from 1.
+//The larger the element, the larger the rank.If two elements are equal, their rank must be the same.
+//Rank should be as small as possible.
         public int[] ArrayRankTransform(int[] arr)
         {
             if(arr.Length < 0 || arr.Length > 100000)//edge cases
