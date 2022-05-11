@@ -30,7 +30,7 @@ namespace LeetCodeProblems.Problems
                     //create a complement using the target and the current number
                     int complement = target - nums[i];
 
-                    //check the dictionary to detrmine if there is a complement 
+                    //check the dictionary to determine if there is a complement 
                     if (dict.ContainsKey(complement))
                     {
                         //if we find a complement we return the index of the complement and the current iteration
